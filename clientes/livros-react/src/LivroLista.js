@@ -20,7 +20,7 @@ export default function LivroLista() {
                 setLoading(false)
                 console.log('realizou set livros')
             });
-          }, 5000); // aumenta o tempo limite de resposta para 5 segundos
+          }, 2000); // aumenta o tempo limite de resposta para 5 segundos
         
           return () => clearTimeout(delay);
 }, []);
