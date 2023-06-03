@@ -162,6 +162,84 @@ e. Configurar o sistema de CORS, definindo uma variável cors, que receberá
 ![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/606dfdea-1596-4ee5-9654-eb6590912d6e)
 
 
+👉 2º Procedimento | Alteração dos Projetos Clientes
+
+.Crie um diretório denominado clientes, e copiar para dentro dele os projetos
+livros-react, livros-next e livros-angular;
+
+.Abra a cópia do projeto livros-react no Visual Studio Code;
+
+.Altere a classe Livro, no arquivo src/model/Livro.ts, mudando o tipo do
+ atributo codigo para String, com o objetivo de compatibilizar com os
+ identificadores do banco de dados MongoDB
+
+.Altere a classe ControleLivros, no arquivo src/controle/ControleLivros.ts,
+ de acordo os passos seguintes:
+
+```bash
+a. Definir a constante global baseURL, recebendo o endereço de base do
+   servidor Express, em "http://localhost:3030/livros"
+
+b. Definir a interface LivroMongo, para compatibilizar o tipo de Livro às
+   chamadas para o servidor, contendo os atributos apresentados a seguir:
+``` 
+![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/24fd595d-1a95-413f-882c-0227f41a92b5)
+
+```bash
+    c. Eliminar o vetor livros, que funcionava como fonte de dados
+
+    d. Alterar o método obterLivros para comportamento assíncrono, com uso de
+fetch no endereço de base, modo GET, recuperação da resposta como vetor
+JSON, e retorno com o mapeamento de cada elemento para um novo objeto do
+tipo Livro
+
+    e. Alterar o método excluir para o comportamento assíncrono, recebendo
+codigo, do tipo String, chamando baseURL/codigo via fetch, no modo
+DELETE, e retornando o campo ok da resposta, indicando sucesso ou falha
+
+    f. Alterar o método incluir para o comportamento assíncrono, adotando o
+parâmetro livro, do tipo Livro, com a conversão dele para uma interface
+LivroMongo, chamada para baseURL via fetch, no modo POST, incluindo o
+tipo de conteúdo como informação do header e a interface, que deve ser
+convertida para texto através de JSON.stringfy, no corpo. O retorno da função
+será o campo ok da resposta, indicando sucesso ou falha
+``` 
+
+. Altere o código-fonte de LivroLista, no arquivo src/LivroLista.js, de acordo
+  com os passos seguintes:
+
+```bash
+a. Alterar a implementação de useEffect, adotando o modelo assíncrono na
+   chamada para obterTodos do controlador, seguida do operador then, e
+   consequente invocação de setLivros com uso do resultado
+
+b. Alterar a implementação do método excluir, efetuando a chamada para
+   setCarregado, com valor false, apenas ao final da execução do método
+   excluir do controlador, o que é viabilizado pelo operador then
+
+c. No mapeamento para LinhaLivro, adicionar o index no lambda, utilizando
+   o valor no atributo key do componente que é repetido, pois deve ser um
+   valor numérico, e agora o código do livro é textual
+``` 
+
+ . Altere o código-fonte de LivroDados, no arquivo src/LivroDados.js, de
+   acordo com os passos seguintes:
+
+```bash
+a. Ao nível do método incluir, alterar o construtor do livro, utilizando um
+   texto vazio para o código
+
+b, No mesmo método, efetuar a chamada para navigate, direcionando para a
+   raiz, apenas ao final da execução do método incluir do controlador, o que é
+   viabilizado pelo operador then
+``` 
+. Com o projeto livro-servidor em execução, iniciar a execução da nova versão
+de livros-react com npm start, e testar as funcionalidades através de um
+navegador, acessando o endereço http://localhost:3000
+
+![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/605a589f-5839-4ce7-826f-df47ee58e390)
+
+
 ## Pré-requisitos
 Antes de iniciar, verifique se você possui os seguintes requisitos:
 - Navegador web atualizado (recomenda-se o Google Chrome, Mozilla Firefox ou Microsoft Edge)
