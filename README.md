@@ -150,6 +150,17 @@ e. Configurar o sistema de CORS, definindo uma variável cors, que receberá
 ```` 
 ![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/f6b0f991-7e33-4d0a-a9a3-13b66551bb55)
 
+.Execute o servidor com npm start, e teste as chamadas através do Postman
+  ou do Boomerang, lembrando que apenas o método GET pode ser verificado
+   através do navegador:
+
+![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/720e2d4b-7ec9-4077-849c-78b8a3b8d0bf)
+
+.Após testar o servidor, utilize também o MongoDB Compass para verificar os
+  dados que foram inseridos
+
+![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/606dfdea-1596-4ee5-9654-eb6590912d6e)
+
 
 ## Pré-requisitos
 Antes de iniciar, verifique se você possui os seguintes requisitos:
