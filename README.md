@@ -16,6 +16,12 @@ Implementar biblioteca cliente de acesso em Java Script
 Utilizar front-ends baseados em React JS, Next JS e Angular
    
 ## Funcionamento
+  
+A Primeira parte da tarefa é se ter um servidor node com express que poderá estar conectado tanto a um banco mongoDB 
+local como a um banco mongoDb de sua conta ao Atlas Database (https://www.mongodb.com/atlas/database) bastando apenas 
+fornecer os dados necessários a conexão.
+
+A segunda parte e adaptar os projetos da livraria em  React JS, Next Js e Angular para que possam consumir essa API fornecida pelo servidor 'express' 
    
 ## Procedimentos 
 
