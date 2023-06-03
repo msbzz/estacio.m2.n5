@@ -412,17 +412,14 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
    
 2. Navegue até o diretório do projeto:
    ```bash
-   2.1 procedimento 1 ou 2 
-   
+   2.1 Ativação do servidor 
+      
+      npm install ou yarn install (mac)
       ex: cd procedimento1/livros-angular 
       
-   2.2. instale as dependencias 
+   2.2. Ativação dos clientes 
   
-      npm install ou yarn install (mac)
-
-   2.3 execute o projeto  
-    
-      npm start 
+ 
    
    ``` 
 ## Tecnologias utilizadas
@@ -430,7 +427,11 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
 - Bootstrap
 - CSS
 - JavaScript
-
+- node
+- React JS
+- Next JS
+- Angular
+- 
 ## Estrutura de diretórios
 A estrutura de diretórios do projeto é organizada da seguinte forma:
 
