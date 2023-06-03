@@ -410,13 +410,23 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
    ```
    
    
-2. Navegue até o diretório do projeto:
+2. Ativação dos aplicativos 
    ```bash
    2.1 Ativação do servidor 
+      2.1.1  Navegue até o diretório do projeto
+            cd livro-servidor   
       
-      npm install ou yarn install (mac)
-      ex: cd procedimento1/livros-angular 
+      2.1.2  instale as dependencias 
+             npm install ou yarn install (mac)
       
+      2.1.3 ative o servidor    
+            npm start
+            
+      2.1.4 certifique-se do funcionamento
+            Abra o postman realize operações CRUD com seguinte end point
+            http://localhost:3030/livros
+
+       
    2.2. Ativação dos clientes 
   
  
