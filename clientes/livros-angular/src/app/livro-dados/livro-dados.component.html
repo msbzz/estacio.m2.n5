@@ -1,0 +1,54 @@
+<div class="container">
+  <form action="">
+    <div class="form-group">
+      <label htmlFor="titulo">Titulo</label>
+      <input
+        type="text"
+        class="form-control"
+        id="titulo"
+        name="titulo"
+        placeholder="Digite o titulo"
+        [(ngModel)]="livro.titulo"/>
+    </div>
+
+    <div class="form-group">
+      <label htmlFor="resumo">Resumo</label>
+       <textarea
+        class="form-control"
+        id="resumo"
+        name="resumo"
+        placeholder="Digite o resumo"
+        [(ngModel)]="livro.resumo"></textarea>
+
+    </div>
+    <div class="form-group">
+      <label htmlFor="editora">Editora</label>
+      <select
+        class="form-control"
+        id="editora"
+        name="editora"
+        [(ngModel)]="livro.editoraNome"
+        placeholder="seleciona a editora">
+        <option key={0}></option>
+        <option *ngFor="let editora of editoras" [value]="editora.nome">
+          {{ editora.nome }}</option>
+
+      </select>
+    </div>
+    <div class="form-group">
+      <label htmlFor="autores">Autores</label>
+      <textarea
+        class="form-control"
+        id="autores"
+        name="autores"
+        placeholder="Digite o(s) autor(es)"
+        [(ngModel)]="livro.autores"></textarea>
+    </div>
+  </form>
+  <div class="xx">
+    <button id="button"  class="btn btn-primary" (click)="incluir()">
+      Salvar dados
+    </button>
+
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<form>
+
+
+  <div className="form-group">
+    <label htmlFor="editora">Editora</label>
+    <select
+      className="form-control"
+      id="editora"
+      value=""
+      placeholder="seleciona a editora"
+
+    >
+      <option key={0}></option>
+      {opcoes.map((editora, index) => (
+        <option key={editora.value}>{editora.text}</option>
+      ))}
+    </select>
+  </div>
+  <div className="form-group">
+    <label htmlFor="autores">Autores</label>
+    <textarea
+      className="form-control"
+      id="autores"
+      placeholder="Digite o(s) autor(es)"
+      value=""></textarea>
+  </div>
+</form>

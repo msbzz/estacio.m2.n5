@@ -1,0 +1,18 @@
+    
+  .hdtitle{
+    background-color: #ff0000;
+    color:#fff;
+    width: 100px;
+    padding: 12px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+
+  }
+
+  .tbtitle {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+  }
