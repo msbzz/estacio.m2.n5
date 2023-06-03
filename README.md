@@ -19,11 +19,14 @@ Utilizar front-ends baseados em React JS, Next JS e Angular
    
 ## Procedimentos 
 
-👉 1º Procedimento | Projeto Angular para o Catálogo de Livros
+👉 1º Procedimento | Criando o Servidor com Express e Mogoose
 
-Configure o projeto do tipo Angular, de acordo com as instruções seguintes
+Crie o banco de dados livraria, e a coleção livros, no MongoDB Compass,
+através da opção Create Database, como na imagem seguinte:
 
- 
+ ![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/51c46ea6-a68c-4b58-896d-651b2812b850)
+
+
  
 
 ## Pré-requisitos
