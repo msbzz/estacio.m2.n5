@@ -26,8 +26,42 @@ através da opção Create Database, como na imagem seguinte:
 
  ![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/51c46ea6-a68c-4b58-896d-651b2812b850)
 
+Crie o aplicativo livros-servidor, baseado em Node JS, com Express e
+Mongoose:
 
- 
+```bash
+
+a. Instalar o gerador de aplicativos do Express, de forma global, utilizando o
+comando npm install -g express-generator
+
+b. Gerar o servidor, através do comando express -e livro-servidor
+
+c. Entrar no diretório gerado, utilizando o comando cd livro-servidor
+
+d. Instalar as dependências do Node JS, através do comando npm install
+
+e.Instalar o Mongoose, utilizando o comando npm install mongoose
+
+f. Instalar o gerenciador de CORS, utilizando o comando npm install cors
+
+.Através do ambiente do Visual Studio Code, defina a conexão com o banco de
+dados MongoDB e a classe de modelo para o Mongoose:
+
+a. Adicionar uma pasta com o nome modelo
+
+b. Na pasta modelo, criar os arquivos "conexao.js" e "livro-schema.js"
+
+c. Em "conexao.js", definir uma variável banco, referenciando a biblioteca
+   mongoose, e uma variável options, no formato JSON, com os atributos
+   useUnifiedTopology e useNewUrlParser, ambos com valor true
+
+d. Efetuar a conexão com o MongoDB, a partir da variável banco, e exportar
+   a variável no padrão de módulo do Java Script
+
+e. Em "livro-schema.js", importar a conexão efetuada na variável banco e
+   definir a estrutura do banco, na variável LivroSchema, instanciando um
+   objeto do tipo banco.Schema, e passando a estrutura no formato JSON
+ ``` 
 
 ## Pré-requisitos
 Antes de iniciar, verifique se você possui os seguintes requisitos:
