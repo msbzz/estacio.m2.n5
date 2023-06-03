@@ -405,13 +405,14 @@ Antes de iniciar, verifique se você possui os seguintes requisitos:
 Siga estas etapas para instalar e executar o projeto em sua máquina local:
 
 1. Clone o repositório: 
-   ```bash
+ 
+ ```bash
    git clone https://github.com/msbzz/estacio.m2.n5.git
    ```
    
-   
 2. Ativação dos aplicativos 
-   ```bash
+  
+  ```bash
    2.1 Ativação do servidor 
       2.1.1  Navegue até o diretório do projeto
             cd livro-servidor   
