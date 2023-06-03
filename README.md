@@ -240,6 +240,156 @@ navegador, acessando o endereço http://localhost:3000
 ![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/605a589f-5839-4ce7-826f-df47ee58e390)
 
 
+. Encerre a execução da nova versão de livros-react e abra a cópia do projeto
+  livros-next no Visual Studio Code
+
+. Substitua os arquivos Livro.ts e ControleLivros.ts pelas versões modificadas
+   na cópia do projeto livros-react, adequando o sistema baseado em Next JS
+   ao novo modelo de chamadas para o servidor Express
+
+. Altere o arquivo pages/LivroLista.tsx, de acordo com as instruções
+  seguintes:
+
+```bash
+a. Remover a constante baseURL, com o endereço do servidor interno, e as
+   funções assíncronas, de acesso à API interna
+
+b. Adicionar uma instância de ControleLivros, com o nome controleLivros
+
+c. Alterar a implementação de useEffect, adotando o modelo assíncrono na
+   chamada para obterTodos de controleLivros, seguida do operador then, e
+   consequente invocação de setLivros com uso do resultado
+
+d. Alterar a assinatura do método excluir, adotando código do tipo String
+
+e. Alterar a implementação do método excluir, efetuando a chamada para
+   setCarregado, com valor false, apenas ao final da execução do método
+   excluir de controleLivros, o que é viabilizado pelo operador then
+
+f. No mapeamento para LinhaLivro, adicionar o index no lambda, utilizando
+   o valor no atributo key do componente que é repetido, pois deve ser um
+   valor numérico, e agora o código do livro é textual
+``` 
+
+###Observação
+
+É importante analisar a grande similaridade com o código utilizado na classe
+LivroLista, na nova versão de livros-react, diferenciando-se apenas pelo uso de
+tipos, devido à adoção do Type Script.
+
+. Altere o arquivo pages/LivroDados.tsx, de acordo com as instruções
+  seguintes:
+
+```bash
+a. Remover a constante baseURL, com o endereço do servidor interno, e a
+   função assíncrona, de acesso à API interna
+
+b. Adicionar uma instância de ControleLivros, com o nome controleLivros
+   
+c. Ao nível do método incluir, alterar o construtor do livro, utilizando um
+   texto vazio para o código
+
+d. No mesmo método, efetuar a chamada para o método push de Router,
+   direcionando para LivroLista, apenas ao final da execução do método
+   incluir de controleLivros, o que é viabilizado pelo operador then
+``` 
+
+###Observação
+
+É importante analisar a grande similaridade com o código utilizado na classe
+LivroDados, na nova versão de livros-react, diferenciando-se apenas pelo uso
+de tipos, devido à adoção do Type Script
+
+. Com o projeto livro-servidor em execução, iniciar a execução da nova versão
+de livros-next via comando npm run dev, e testar as funcionalidades através
+de um navegador, acessando o endereço http://localhost:3000
+
+![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/2b2b447c-8311-4949-97fb-32dfca9c736a)
+
+. Abra a cópia do projeto livros-angular no Visual Studio Code, sem a
+  necessidade de parar a execução de livros-next, já que usa uma porta
+  diferente;
+
+. Altere a classe Livro, no arquivo src/app/livro.ts, modificando o tipo do
+  atributo codigo para String, e usando texto vazio para inicialização no
+  construtor;
+
+. Altere a classe ControleLivrosService, em src/app/controle-
+  livros.service.ts, de acordo os passos seguintes:
+
+```bash
+
+a. Definir a constante global baseURL, recebendo o endereço de base do
+  servidor Express, em "http://localhost:3030/livros"
+
+b. Definir a interface LivroMongo, para compatibilizar o tipo de Livro às
+   chamadas para o servidor, contendo os atributos apresentados a seguir:
+``` 
+
+![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/6adf6ceb-8b3a-4d5c-840e-e3c785ce9910)
+
+```bash
+
+c. Eliminar o vetor livros, que funcionava como fonte de dados
+
+d. Alterar o método obterLivros para comportamento assíncrono, com uso de
+   fetch no endereço de base, modo GET, recuperação da resposta como vetor
+   JSON, e retorno com o mapeamento de cada elemento para um novo objeto do
+    tipo Livro
+
+f. Alterar o método excluir para o comportamento assíncrono, recebendo
+codigo, do tipo String, chamando baseURL/codigo via fetch, no modo
+DELETE, e retornando o campo ok da resposta, indicando sucesso ou falha
+
+g. Alterar o método incluir para o comportamento assíncrono, adotando o
+parâmetro livro, do tipo Livro, com a conversão dele para uma interface
+LivroMongo, chamada para baseURL via fetch, no modo POST, incluindo o
+tipo de conteúdo como informação do header e a interface, que deve ser
+convertida para texto através de JSON.stringfy, no corpo. O retorno da função
+será o campo ok da resposta, indicando sucesso ou falha
+``` 
+
+Observação
+
+
+Os três métodos podem ser simplesmente copiados da nova versão de
+ControleLivros, na versão alterada de livros-react, pois não há nenhuma
+diferença em termos de código-fonte.
+
+. Altere o código-fonte de LivroListaComponent, que foi definido no arquivo
+   src/app/livro-lista/livro-lista.componente.ts, de acordo com as instruções
+   que são apresentadas a seguir:
+
+```bash
+a. Alterar a implementação do método ngOnInit, para utilizar o modelo
+   assíncrono na chamada para obterTodos do controlador, e consequente
+   atribuição do resultado ao vetor livros, sequenciada pelo operador then
+
+b. Alterar a assinatura do método excluir, usando codigo como String
+
+c. Alterar a implementação do método excluir, efetuando a nova chamada
+   assíncrona para obterTodos apenas ao final da execução de excluir do
+   controlador, o que é viabilizado pelo operador then
+``` 
+
+. Altere o código-fonte de LivroDadosComponent, que foi definido no arquivo
+  src/app/livro-dados/livro-dados.componente.ts, de acordo com as
+  instruções que são apresentadas a seguir:
+
+```bash
+a. Ao nível do método incluir, efetuar a chamada para navigateByUrl, do
+  router, direcionando para "/lista", apenas ao término da execução do
+  método incluir do controlador, o que é viabilizado pelo operador then
+``` 
+
+. Com o projeto livro-servidor em execução, inicie a execução da nova versão
+  de livros-angular via comando ng serve, e teste as funcionalidades através
+  de um navegador, acessando o endereço http://localhost:4200
+
+![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/b0621312-9e3e-414e-9a82-265313b96645)
+
+
+
 ## Pré-requisitos
 Antes de iniciar, verifique se você possui os seguintes requisitos:
 - Navegador web atualizado (recomenda-se o Google Chrome, Mozilla Firefox ou Microsoft Edge)
