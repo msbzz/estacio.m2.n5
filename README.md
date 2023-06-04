@@ -422,41 +422,6 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
       2.1.2  instale as dependências 
              npm install ou yarn install (mac)
       
-      2.1.3 Configure connect string do banco de dados
-             
-             1) configurar arquivo .env na raiz do projeto(no mesmo nivel de package.JSON)
-               
-               Caso o banco ser acessado caso seja local, e necessite, defina usuario e senha 
-               (USER e PWD), o banco é necessário e será definir em DATABASE  
-               
-               Caso queira acessar o Mongo Atlas preencha o USER_ATLAS e PWD_ATLAS 
-              
-              vide imagem
-              
-              ![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/9f121a80-fdc7-43e5-afe9-41e37749f7ab)
-
- 
-               
-               obs: por minha conta ser free, creio que por isso não necessite da definição do banco 
-              
-              2)  configurar arquivo setDB.js na raiz do projeto(no mesmo nivel de package.JSON)
-                 
-                 Nesse arquivo exitirá uma constante que definirá o tipo de acesso a ser feito
-                  
-              vide imagem
-              
-              ![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/57513fa9-0591-46c2-8701-c3d835572880) 
- 
- 
-                  Por default esta como "2" ao mongo local mas poderia ser "1" para conexão local 
-                  sem usuario e senha e "3" para o mongo atlas 
-      
-      2.1.4 inicie o servidor    
-            npm start
-            
-      2.1.5 certifique-se do funcionamento
-            Abra o postman realize operações CRUD com seguinte end point
-            http://localhost:3030/livros
 
          
    2.2. Ativação dos clientes 
