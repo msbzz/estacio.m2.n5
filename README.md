@@ -412,22 +412,23 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
    
 2. Ativação dos aplicativos 
   
-  ```bash
    
    
    2.1 Ativação do servidor 
+
+```bash
       2.1.1  Navegue até o diretório do projeto
             cd livro-servidor   
       
-      2.1.2  instale as dependencias 
+      2.1.2  instale as dependências 
              npm install ou yarn install (mac)
       
-      2.1.3 Configurar connect string do banco de dados
+      2.1.3 Configure connect string do banco de dados
              
              Partindo do principio que se tenha ou um banco local instaldo com um banco criado 
-             ou uma conexão ao mongo atlas criada será iniciado a apontamento ao banco  
+             ou uma conexão ao mongo atlas criada será iniciado de apontamento ao banco  
              
-             Essa ativação é feita em dois pontos:
+             Essa configuração é feita em dois pontos:
              
              1) configurar arquivo .env na raiz do projeto(no mesmo nivel de package.JSON)
                
@@ -447,14 +448,14 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
                   Por default esta como "2" ao mongo local mas poderia ser "1" para conexão local 
                   sem usuario e senha e "3" para o mongo atlas 
       
-      2.1.4 ative o servidor    
+      2.1.4 inicie o servidor    
             npm start
             
       2.1.5 certifique-se do funcionamento
             Abra o postman realize operações CRUD com seguinte end point
             http://localhost:3030/livros
 
-       
+   ```        
    2.2. Ativação dos clientes 
   
  
