@@ -462,6 +462,10 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
   ```bash
     
      2.2.1 Cliente React JS
+      . acessar a pasta 'livros-react' em 'clientes'
+      . executar o comando npm install
+      . executar o comando npm start
+      . o app será executado em http://localhost:3003/
      
      2.2.2 Cliente Next JS
      
