@@ -422,7 +422,22 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
       2.1.2  instale as dependências 
              npm install ou yarn install (mac)
       
+      2.1.3 Configure connect string do banco de dados
 
+        1) configurar arquivo .env na raiz do projeto(no mesmo nivel de package.JSON)
+               
+               Caso o banco ser acessado caso seja local, e necessite, defina usuario e senha 
+               (USER e PWD), o banco é necessário e será definir em DATABASE  
+               
+               Caso queira acessar o Mongo Atlas preencha o USER_ATLAS e PWD_ATLAS 
+              
+              vide imagem
+              
+              ![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/559ce3a7-3a59-4256-87ad-1fb51c3fb155)
+               
+               obs: por minha conta ser free, creio que por isso não necessite da definição do banco 
+          
+          2)  configurar arquivo setDB.js na raiz do projeto(no mesmo nivel de package.JSON)      
          
    2.2. Ativação dos clientes 
   
