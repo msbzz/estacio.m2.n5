@@ -425,12 +425,13 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
       
       2.1.3 Configure connect string do banco de dados
              
-             Partindo do principio que se tenha ou um banco local instaldo com um banco criado 
-             ou uma conexão ao mongo atlas criada será iniciado de apontamento ao banco  
+             1) Pré requisito para o apontamento ao banco
+               
+                Ter o MongoDB instaldo localmente com um banco já definido a ser configurado em .env
+                ou  ter conta https://www.mongodb.com/atlas/database com uma conexão ativa 
              
-             Essa configuração é feita em dois pontos:
-             
-             1) configurar arquivo .env na raiz do projeto(no mesmo nivel de package.JSON)
+              
+             2) configurar arquivo .env na raiz do projeto(no mesmo nivel de package.JSON)
                
                Caso o banco ser acessado caso seja local, e necessite, defina usuario e senha 
                (USER e PWD), o banco é necessário e será definir em DATABASE  
@@ -439,7 +440,7 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
                
                obs: por minha conta ser free, creio que por isso não necessite da definição do banco 
               
-              2)  configurar arquivo setDB.js na raiz do projeto(no mesmo nivel de package.JSON)
+              3)  configurar arquivo setDB.js na raiz do projeto(no mesmo nivel de package.JSON)
                  
                  Nesse arquivo exitirá uma constante que definirá o tipo de acesso a ser feito
                  
