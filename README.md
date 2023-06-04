@@ -399,7 +399,9 @@ a. Ao nível do método incluir, efetuar a chamada para navigateByUrl, do
 ## Pré-requisitos
 Antes de iniciar, verifique se você possui os seguintes requisitos:
 - Navegador web atualizado (recomenda-se o Google Chrome, Mozilla Firefox ou Microsoft Edge)
- 
+
+- Ter o MongoDB instaldo localmente com um banco já definido a ser configurado em .env
+                ou  ter conta https://www.mongodb.com/atlas/database com uma conexão ativa 
 
 ## Instalação
 Siga estas etapas para instalar e executar o projeto em sua máquina local:
@@ -425,26 +427,23 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
       
       2.1.3 Configure connect string do banco de dados
              
-             1) Pré requisito para o apontamento ao banco
-               
-                Ter o MongoDB instaldo localmente com um banco já definido a ser configurado em .env
-                ou  ter conta https://www.mongodb.com/atlas/database com uma conexão ativa 
-             
-              
-             2) configurar arquivo .env na raiz do projeto(no mesmo nivel de package.JSON)
+             1) configurar arquivo .env na raiz do projeto(no mesmo nivel de package.JSON)
                
                Caso o banco ser acessado caso seja local, e necessite, defina usuario e senha 
                (USER e PWD), o banco é necessário e será definir em DATABASE  
                
                Caso queira acessar o Mongo Atlas preencha o USER_ATLAS e PWD_ATLAS 
                
+               ![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/797c1d19-2e72-4f88-95a6-dbc2942af021)
+
+               
                obs: por minha conta ser free, creio que por isso não necessite da definição do banco 
               
-              3)  configurar arquivo setDB.js na raiz do projeto(no mesmo nivel de package.JSON)
+              2)  configurar arquivo setDB.js na raiz do projeto(no mesmo nivel de package.JSON)
                  
                  Nesse arquivo exitirá uma constante que definirá o tipo de acesso a ser feito
                  
-                 const TIPO_CONEXAO = "2"; 
+                 ![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/57513fa9-0591-46c2-8701-c3d835572880) 
                  
                   Por default esta como "2" ao mongo local mas poderia ser "1" para conexão local 
                   sem usuario e senha e "3" para o mongo atlas 
@@ -468,9 +467,24 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
       . o app será executado em http://localhost:3003/
      
      2.2.2 Cliente Next JS
+      . acessar a pasta 'livros-next' em 'clientes'
+      . executar o comando npm install
+      . executar o comando npm run dev
+      . o app será executado em http://localhost:3005/
      
      2.2.3 Cliente Next JS
-    
+
+      . acessar a pasta 'livros-angular' em 'clientes'
+      . executar o comando npm install
+      . executar o comando npm start
+      . o app será executado em http://localhost:4200/ 
+      
+    obs:  todos os apps estão configurados para usar o end point do
+          servidor node em ''http://127.0.0.1:3030/livros'
+          ex: 
+          
+          ![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/651e11ea-ce8a-4f60-bb8f-dfe08972f486)
+
   
   ```
  
