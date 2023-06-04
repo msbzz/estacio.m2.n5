@@ -424,9 +424,40 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
 
             . npm install ou yarn install (mac)
       
-      2.1.3 Configure connect string do banco de dados
-
-               ![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/b61d570c-095d-41bf-a54f-4c36854c0294)
+            2.1.3 Configure connect string do banco de dados
+             
+             1) configurar arquivo .env na raiz do projeto(no mesmo nivel de package.JSON)
+               
+               Caso o banco ser acessado caso seja local, e necessite, defina usuario e senha 
+               (USER e PWD), o banco é necessário e será definir em DATABASE  
+               
+               Caso queira acessar o Mongo Atlas preencha o USER_ATLAS e PWD_ATLAS 
+              
+              vide imagem
+              
+ 
+ 
+               
+               obs: por minha conta ser free, creio que por isso não necessite da definição do banco 
+              
+              2)  configurar arquivo setDB.js na raiz do projeto(no mesmo nivel de package.JSON)
+                 
+                 Nesse arquivo exitirá uma constante que definirá o tipo de acesso a ser feito
+                  
+              vide imagem
+              
+ 
+ 
+ 
+                  Por default esta como "2" ao mongo local mas poderia ser "1" para conexão local 
+                  sem usuario e senha e "3" para o mongo atlas
+      
+      2.1.4 ative o servidor    
+            npm start
+            
+      2.1.5 certifique-se do funcionamento
+            Abra o postman realize operações CRUD com seguinte end point
+            http://localhost:3030/livros
 
          
    2.2. Ativação dos clientes 
@@ -476,8 +507,18 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
 ## Estrutura de diretórios
 A estrutura de diretórios do projeto é organizada da seguinte forma:
 
- ![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/0639b17a-6023-4bc1-8cdd-6d29ab71ec7a)
-
+```
+nome-do-repositorio/
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+├── img/
+│   └── imagem1.jpg
+│   └── imagem2.png
+└── README.md
+```
 
   
  

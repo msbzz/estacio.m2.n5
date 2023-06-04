@@ -8,13 +8,14 @@ var app = require('../app');
 var debug = require('debug')('livro-servidor:server');
 var http = require('http');
 
+require('dotenv').config()
 
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3030');
+var port = normalizePort(process.env.PORT_SERVE || '3030');
 app.set('port', port);
 
 /**
