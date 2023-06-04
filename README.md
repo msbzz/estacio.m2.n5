@@ -459,9 +459,19 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
    ```        
    2.2. Ativação dos clientes 
   
+  ```bash
+    
+     2.2.1 Cliente React JS
+     
+     2.2.2 Cliente Next JS
+     
+     2.2.3 Cliente Next JS
+    
+  
+  ```
  
    
-   ``` 
+    
 ## Tecnologias utilizadas
 - HTML
 - Bootstrap
