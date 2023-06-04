@@ -423,7 +423,29 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
              npm install ou yarn install (mac)
       
       2.1.3 Configurar connect string do banco de dados
-      
+             
+             Partindo do principio que se tenha ou um banco local instaldo com um banco criado 
+             ou uma conexão ao mongo atlas criada será iniciado a apontamento ao banco  
+             
+             Essa ativação é feita em dois pontos:
+             
+             1) configurar arquivo .env na raiz do projeto(no mesmo nivel de package.JSON)
+               
+               Caso o banco ser acessado caso seja local, e necessite, defina usuario e senha 
+               (USER e PWD), o banco é necessário e será definir em DATABASE  
+               
+               Caso queira acessar o Mongo Atlas preencha o USER_ATLAS e PWD_ATLAS 
+               
+               obs: por minha conta ser free, creio que por isso não necessite da definição do banco 
+              
+              2)  configurar arquivo setDB.js na raiz do projeto(no mesmo nivel de package.JSON)
+                 
+                 Nesse arquivo exitirá uma constante que definirá o tipo de acesso a ser feito
+                 
+                 const TIPO_CONEXAO = "2"; 
+                 
+                  Por default esta como "2" ao mongo local mas poderia ser "1" para conexão local 
+                  sem usuario e senha e "3" para o mongo atlas 
       
       2.1.4 ative o servidor    
             npm start
