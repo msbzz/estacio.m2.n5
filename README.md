@@ -504,9 +504,8 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
 ## Estrutura de diretórios
 A estrutura de diretórios do projeto é organizada da seguinte forma:
 
-``` 
+ ![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/0639b17a-6023-4bc1-8cdd-6d29ab71ec7a)
 
-```
 
   
  
