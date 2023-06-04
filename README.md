@@ -434,7 +434,8 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
                
                Caso queira acessar o Mongo Atlas preencha o USER_ATLAS e PWD_ATLAS 
                
-               ![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/797c1d19-2e72-4f88-95a6-dbc2942af021)
+                ![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/9f121a80-fdc7-43e5-afe9-41e37749f7ab)
+
 
                
                obs: por minha conta ser free, creio que por isso não necessite da definição do banco 
@@ -503,17 +504,8 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
 ## Estrutura de diretórios
 A estrutura de diretórios do projeto é organizada da seguinte forma:
 
-```
-nome-do-repositorio/
-├── index.html
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-├── img/
-│   └── imagem1.jpg
-│   └── imagem2.png
-└── README.md
+``` 
+
 ```
 
   
