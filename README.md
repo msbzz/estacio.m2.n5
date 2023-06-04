@@ -417,14 +417,17 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
 
  
       2.1.1  Navegue até o diretório do projeto
-            cd livro-servidor   
+             
+            . cd livro-servidor   
       
       2.1.2  instale as dependências 
-             npm install ou yarn install (mac)
+
+            . npm install ou yarn install (mac)
       
       2.1.3 Configure connect string do banco de dados
 
-       
+               ![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/b61d570c-095d-41bf-a54f-4c36854c0294)
+
          
    2.2. Ativação dos clientes 
   
