@@ -446,7 +446,8 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
                   
               vide imagem
               
- 
+               ![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/6cab4b81-cdc7-4eaf-8cff-ad7a6b8b0f75)
+   
  
  
                   Por default esta como "2" ao mongo local mas poderia ser "1" para conexão local 
@@ -507,7 +508,7 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
 ## Estrutura de diretórios
 A estrutura de diretórios do projeto é organizada da seguinte forma:
 
-```
+ 
 nome-do-repositorio/
 ├── index.html
 ├── css/
@@ -518,7 +519,7 @@ nome-do-repositorio/
 │   └── imagem1.jpg
 │   └── imagem2.png
 └── README.md
-```
+ 
 
   
  
