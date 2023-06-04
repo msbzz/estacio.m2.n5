@@ -332,8 +332,7 @@ b. Definir a interface LivroMongo, para compatibilizar o tipo de Livro às
    chamadas para o servidor, contendo os atributos apresentados a seguir:
 ``` 
 
-![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/6adf6ceb-8b3a-4d5c-840e-e3c785ce9910)
-
+ 
 ```bash
 
 c. Eliminar o vetor livros, que funcionava como fonte de dados
@@ -413,8 +412,6 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
    ```
    
 2. Ativação dos aplicativos 
-  
-   
    
    2.1 Ativação do servidor 
 
@@ -433,10 +430,10 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
                (USER e PWD), o banco é necessário e será definir em DATABASE  
                
                Caso queira acessar o Mongo Atlas preencha o USER_ATLAS e PWD_ATLAS 
-               
+       ```         
                 ![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/9f121a80-fdc7-43e5-afe9-41e37749f7ab)
 
-
+      ```bash
                
                obs: por minha conta ser free, creio que por isso não necessite da definição do banco 
               
