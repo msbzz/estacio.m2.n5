@@ -433,8 +433,7 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
                
                Caso queira acessar o Mongo Atlas preencha o USER_ATLAS e PWD_ATLAS 
               
-              vide imagem
-              
+               
  ![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/3f33ad0b-8a07-4cf1-aef8-2f14402aabd5)
 
  
@@ -447,7 +446,8 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
                   
               vide imagem
                
-   
+   ![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/a69f6f98-772d-48af-8173-697134be4799)
+
  
  
                   Por default esta como "2" ao mongo local mas poderia ser "1" para conexão local 
