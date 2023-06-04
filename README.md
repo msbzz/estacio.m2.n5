@@ -433,11 +433,7 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
               
               vide imagem
               
-              ![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/559ce3a7-3a59-4256-87ad-1fb51c3fb155)
-               
-               obs: por minha conta ser free, creio que por isso não necessite da definição do banco 
-          
-          2)  configurar arquivo setDB.js na raiz do projeto(no mesmo nivel de package.JSON)      
+               ![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/559ce3a7-3a59-4256-87ad-1fb51c3fb155)
          
    2.2. Ativação dos clientes 
   
