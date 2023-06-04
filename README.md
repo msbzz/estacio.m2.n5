@@ -407,9 +407,9 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
 
 1. Clone o repositório: 
  
- ```bash
+ 
    git clone https://github.com/msbzz/estacio.m2.n5.git
-   ```
+   
    
 2. Ativação dos aplicativos 
    
@@ -435,7 +435,8 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
               
               vide imagem
               
- 
+ ![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/3f33ad0b-8a07-4cf1-aef8-2f14402aabd5)
+
  
                
                obs: por minha conta ser free, creio que por isso não necessite da definição do banco 
@@ -445,8 +446,7 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
                  Nesse arquivo exitirá uma constante que definirá o tipo de acesso a ser feito
                   
               vide imagem
-              
-               ![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/6cab4b81-cdc7-4eaf-8cff-ad7a6b8b0f75)
+               
    
  
  
@@ -509,17 +509,8 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
 A estrutura de diretórios do projeto é organizada da seguinte forma:
 
  
-nome-do-repositorio/
-├── index.html
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-├── img/
-│   └── imagem1.jpg
-│   └── imagem2.png
-└── README.md
- 
+  ![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/25fddf06-8ad2-4b3f-878b-a3125a07b7e8)
+
 
   
  
