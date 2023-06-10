@@ -4,4 +4,4 @@ const environment = {
 };
 
 
-export const URL= environment.URL_externa
+export const URL= environment.URL_SEVER_NODE
