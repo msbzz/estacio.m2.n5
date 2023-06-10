@@ -137,7 +137,7 @@ https://estacio-m2-n5-client-react.vercel.app/
 
 https://estacio-m2-n5-client-next.vercel.app/
  
-   
+obs: no caso do react precisei usar um setTimeOut 4s para aguardar a resposta do servidor   
     
 ## Tecnologias utilizadas
 - HTML
