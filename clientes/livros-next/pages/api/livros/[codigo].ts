@@ -12,7 +12,8 @@ export default function Codigo(req: NextApiRequest, res: NextApiResponse) {
     return;
   }
 
-  const id = parseInt(req.query.codigo as string, 10);
+  //const id = parseInt(req.query.codigo as string, 10);
+  const id =  req.query.codigo ;
   
 
   try {

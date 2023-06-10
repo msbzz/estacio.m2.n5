@@ -53,7 +53,7 @@ export default class ControleLivros {
       });
   }
 
-  public async excluir(cod: string) {
+  public async excluir(cod: any) {
     fetch(URL_PROJ + "/" + cod, { method: "DELETE" })
       .then(() => console.log("Documento " + cod + " excluido"))
       .catch((error) => {
