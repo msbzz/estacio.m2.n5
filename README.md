@@ -119,13 +119,23 @@ Siga estas etapas para instalar e executar o projeto em sua máquina local:
       . o app será executado em http://localhost:4200/ 
       
     obs:  todos os apps estão configurados para usar o end point do
-          servidor node em ''http://127.0.0.1:3030/livros'
+          servidor local node em ''http://127.0.0.1:3030/livros' porem é
+          possivel realizar teste de validação modificando-se a url conforme
+          apresentado abaixo que no caso esta apontando para local mas poderia
+          ser modificada para o servidor externo 
+          
           ex: 
           
-          ![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/651e11ea-ce8a-4f60-bb8f-dfe08972f486)
+          ![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/cff5207a-245d-4e93-87c0-ef362ebf46b1)
 
   
-   
+ Aqui temos as versões em deploy que utilizam o servidor externo
+ 
+ https://livraria-versao-angular.vercel.app/home
+
+https://estacio-m2-n5-client-react.vercel.app/
+
+https://estacio-m2-n5-client-next.vercel.app/
  
    
     
