@@ -152,8 +152,8 @@ https://estacio-m2-n5-client-next.vercel.app/
 ## Estrutura de diretórios
 A estrutura de diretórios do projeto é organizada da seguinte forma:
 
+ ![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/5d49b6d8-7440-47a3-a197-b100901c88f5)
  
-  ![image](https://github.com/msbzz/estacio.m2.n5/assets/44148209/25fddf06-8ad2-4b3f-878b-a3125a07b7e8)
 
 
   
